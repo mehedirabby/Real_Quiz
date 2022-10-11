@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './courses.css'
 
 const Course = ({ course }) => {
-    const { id, name, logo, total } = course
+    const { id, name, logo } = course
     return (
         <div className='c-container'>
             <img className='img' src={logo}></img>
