@@ -7,11 +7,6 @@ const Home = () => {
     const coursesData = useLoaderData()
     const courses = coursesData.data
 
-    
-    
-    console.log(courses)
-    
-    
     return (
         <div className='home-container'>
             <h2>this is home{courses.length}</h2>

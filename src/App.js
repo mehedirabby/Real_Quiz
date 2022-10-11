@@ -3,6 +3,7 @@ import './App.css';
 import Blogs from './Component/Blogs/Blogs';
 import Home from './Component/Home/Home';
 import Main from './Component/Main/Main';
+import Quiz from './Component/Quiz/Quiz';
 import Statics from './Component/Statics/Statics';
 
 function App() {
@@ -24,6 +25,11 @@ function App() {
         {
           path:'/blogs',
           element:<Blogs></Blogs>
+        },
+        {
+          path:'/quiz/:quizId',
+          
+          element:<Quiz></Quiz>
         },
         {
           path:'*',

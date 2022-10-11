@@ -9,7 +9,7 @@ const Course = ({ course }) => {
             <img className='img' src={logo}></img>
             <div className='des-container'>
                 <h3>{name}</h3>
-                <Link to='/link'>
+                <Link to={`/quiz/${id}`}>
                 <button className='btn'>Start quiz</button>
                 </Link>
             </div>
