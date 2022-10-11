@@ -13,12 +13,10 @@ function App() {
       children:[
         {
           path:'/',
+          loader:()=>fetch('https://openapi.programming-hero.com/api/quiz'),
           element:<Home></Home>
         },
-        {
-          path:'/home',
-          element:<Home></Home>
-        },
+       
         {
           path:'/statics',
           element:<Statics></Statics>
@@ -26,6 +24,10 @@ function App() {
         {
           path:'/blogs',
           element:<Blogs></Blogs>
+        },
+        {
+          path:'*',
+          element:<h1> 404 Error</h1>
         }
       ]
     }
