@@ -1,5 +1,6 @@
 .course-container{
     display: grid;
-    
-    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 300px;
 }
