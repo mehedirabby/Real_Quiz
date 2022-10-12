@@ -1,6 +1,7 @@
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 import './Statics.css'
+import React from 'react';
 
 const  Statics = () => {
     const data = [

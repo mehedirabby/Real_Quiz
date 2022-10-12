@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import './Option.css'
 
@@ -6,7 +8,7 @@ const Option = (props) => {
     const {option,correctAnswer}=props;
     console.log(correctAnswer)
     
-    const notify=(ans)=>alert(`${ans}`);
+    const notify=(ans)=>toast(`${ans}`);
 
     const handleChecker=(selectedAnswer)=>{
         console.log(selectedAnswer)
@@ -31,7 +33,7 @@ const Option = (props) => {
            </div>
            
             
-            
+           <ToastContainer />
         </div>
     );
 };
