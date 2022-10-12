@@ -8,8 +8,10 @@ const Header = () => {
             <h2><i>Real Quiz</i></h2>
             <div>
             <Link to='/'>Home</Link>
+            <Link to='/'>Topics</Link>
             <Link to='/statics'>Statics</Link>
             <Link to='/blogs'>Blogs</Link>
+            <Link to='*'>About</Link>
             </div>
         </nav>
     );

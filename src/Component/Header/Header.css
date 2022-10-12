@@ -8,9 +8,7 @@
 .Header{
     display: flex;
     height: 80px;
-    
     background-color: aqua;
-    
     align-items: center;
     justify-content: space-between;
     padding-left: 260px;
@@ -20,4 +18,13 @@
 .Header a:hover{
     color: rgb(0, 0, 0);
     font-weight: bold;
+}
+@media screen and (max-width: 688px) {
+    .Header a{
+        margin-left: -20px;
+    }
+    .Header h2{
+        display: none;
+        padding-right: 0px;
+    }
 }

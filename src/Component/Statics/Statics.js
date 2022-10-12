@@ -1,33 +1,56 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
-const Statics = () => {
-    const [datas,setDatas]=useState([])
-    useEffect(()=>{
-        // fetch('https://openapi.programming-hero.com/api/quiz')
-        // .then(res=>res.json())
-        // .
-        axios.get('https://openapi.programming-hero.com/api/quiz')
-        .then(data=>{
-            const datasLoaded = data.data;
-            console.log(datasLoaded.id)
-            const loadedData = datasLoaded.map(data=>{
-                const total = datasLoaded.total;
-                
-            })
+const  Statics = () => {
+    const data = [
+        {
+          name: "React",
+          Question: 8,
+          
+        },
+        {
+          name: "Java Script",
+          Question: 9,
+          
+        },
+        {
+          name: "CSS",
+          Question: 8,
+         
+        },
+        {
+          name: "GIT",
+          Question: 11,
+          
+        }
+      ];
+      
+      
+        return (
 
-        })
-
-
-    },[])
-   
-    return (
-        <div>
-            <h2>This is statics</h2>
-           
-        </div>
-    );
-};
+         <div>
+            <h2>Simple Bar Chart On Quiz and Their Question</h2>
+             <BarChart
+            width={500}
+            height={300}
+            data={data}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            
+            <Bar dataKey="Question" fill="#82ca9d" />
+          </BarChart>
+         </div>
+        );
+        }      
 
 export default Statics;
