@@ -1,5 +1,6 @@
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
+import './Statics.css'
 
 const  Statics = () => {
     const data = [
@@ -30,6 +31,7 @@ const  Statics = () => {
 
          <div>
             <h2>Simple Bar Chart On Quiz and Their Question</h2>
+             <div className='bar-chart'>
              <BarChart
             width={500}
             height={300}
@@ -49,6 +51,7 @@ const  Statics = () => {
             
             <Bar dataKey="Question" fill="#82ca9d" />
           </BarChart>
+             </div>
          </div>
         );
         }      

@@ -1,0 +1,9 @@
+.bar-chart{
+    margin-left: 720px;
+    margin-top: 25px;
+}
+@media screen and (max-width: 688px) {
+    .bar-chart{
+        margin-left: 0px;
+    }
+}
