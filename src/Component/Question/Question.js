@@ -4,8 +4,9 @@ import './Question.css'
 
 const Question = (props) => {
     // 
-    const {options} =props.question
-    console.log(props.question)
+    const {options,correctAnswer} =props.question
+    console.log(props.question.correctAnswer)
+    console.log(props)
     
     return (
         <div>
@@ -16,6 +17,7 @@ const Question = (props) => {
            {
             options.map(option=><Option
             option={option}
+            correctAnswer={correctAnswer}
             ></Option>)
            }
            </div>
